@@ -15,7 +15,34 @@ description: 按时间查看 zfensi 个人博客的全部文章归档。
 
 <p class="page-intro">这里按时间倒序展示全部已发布文章，方便搜索引擎抓取和读者快速回看。</p>
 
+{% if site.categories.size > 0 %}
+<section class="section-header">
+  <h2>按分类浏览</h2>
+  <p>先看专题，再看全部时间线。</p>
+</section>
+<section class="taxonomy-links">
+  {% for category in site.categories %}
+    <a class="tag-chip" href="#{{ category[0] | slugify }}">{{ category[0] }} ({{ category[1].size }})</a>
+  {% endfor %}
+</section>
+
+{% for category in site.categories %}
+<section class="page-block" id="{{ category[0] | slugify }}">
+  <h2>{{ category[0] }}</h2>
+  <div class="post-listing">
+    {% for post in category[1] %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
+{% endif %}
+
 {% if site.posts.size > 0 %}
+<section class="section-header">
+  <h2>按时间浏览</h2>
+  <p>如果你想顺着发布时间回看，这里保留完整时间线。</p>
+</section>
 <section class="archive-list">
 {% for post in site.posts %}
   <article>

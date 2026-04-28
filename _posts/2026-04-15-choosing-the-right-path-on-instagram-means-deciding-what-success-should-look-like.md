@@ -20,7 +20,7 @@ description: >-
   that purpose, growth efforts become reactive, and reactive accounts usually
   lose direction before they gain real momentum.
 cover: >-
-  /images/blog/Instagram/choosing-the-right-path-on-instagram-means-deciding-what-success-should-look-like.svg
+  /images/blog/Instagram/choosing-the-right-path-on-instagram-means-deciding-what-success-should-look-like.jpg
 ---
 
 ## Introduction

@@ -14,7 +14,7 @@ categories:
 description: >-
   用一句话概括本文内容，控制在 60 到 120 个字更适合搜索结果展示。
 cover: >-
-  /images/blog/Blog/your-article-slug.svg
+  /images/blog/Blog/your-article-slug.jpg
 ---
 
 # 文章标题

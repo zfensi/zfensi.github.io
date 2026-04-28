@@ -15,7 +15,7 @@ categories:
 description: >-
   从写作成本、部署效率和长期可维护性出发，说明为什么用 GitHub Pages 搭建个人博客。
 cover: >-
-  /images/blog/Blog/why-build-a-personal-blog-on-github-pages.svg
+  /images/blog/Blog/why-build-a-personal-blog-on-github-pages.jpg
 ---
 
 # 为什么把个人博客搭在 GitHub Pages 上

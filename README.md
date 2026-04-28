@@ -29,7 +29,7 @@
 
 1. 支持 `title`、`date`、`slug`、`tags`、`target_repo`、`category`、`description`、`cover`
 2. 为了兼容 Jekyll 分类聚合，建议同时保留 `categories: [你的分类]`
-3. `cover` 建议使用站内路径，例如：`/images/blog/Instagram/your-post.svg`
+3. `cover` 建议使用站内路径，例如：`/images/blog/Instagram/your-post.jpg`
 
 ## SEO 基础
 
@@ -40,6 +40,13 @@
 5. 已补充基础描述、封面图、favicon、robots meta 和结构化数据
 6. 已加入面包屑、分类页、标签页和相关文章内链
 7. 当文章数量超过 6 篇时，首页会自动出现分页
+8. 导航栏支持直接显示分类入口
+
+## 封面图
+
+1. 文章封面优先使用站内本地图片，避免外链失效
+2. 当前已下载两张可免费使用的真实照片封面到 `images/blog/...`
+3. 旧的 `.svg` 封面仍保留，后续可自行删除
 
 ## 图标
 
