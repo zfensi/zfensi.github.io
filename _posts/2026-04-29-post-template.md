@@ -1,9 +1,20 @@
 ---
-title: "文章标题"
-date: 2026-04-29 09:00:00 +0800
-categories: [blog]
-tags: [关键词1, 关键词2]
-description: 用一句话概括本文内容，控制在 60 到 120 个字更适合搜索结果展示。
+title: >-
+  文章标题
+date: 2026-04-29T09:00:00.000Z
+slug: >-
+  your-article-slug
+tags:
+  - 关键词1
+  - 关键词2
+target_repo: auto
+category: Blog
+categories:
+  - Blog
+description: >-
+  用一句话概括本文内容，控制在 60 到 120 个字更适合搜索结果展示。
+cover: >-
+  /images/blog/Blog/your-article-slug.svg
 ---
 
 # 文章标题

@@ -5,6 +5,12 @@ permalink: /about/
 description: 关于 zfensi 个人博客、内容方向和更新方式。
 ---
 
+<nav class="breadcrumbs" aria-label="面包屑">
+  <a href="{{ '/' | relative_url }}">首页</a>
+  <span>/</span>
+  <span>关于</span>
+</nav>
+
 # 关于本站
 
 <p class="page-intro">这是一个以中文写作为主的个人博客，记录技术实践、内容运营、SEO、独立站和日常思考。</p>
@@ -26,5 +32,5 @@ description: 关于 zfensi 个人博客、内容方向和更新方式。
 
 <section class="page-block">
   <h2>订阅与导航</h2>
-  <p><a href="{{ '/feed.xml' | relative_url }}">RSS 订阅</a>、<a href="{{ '/archive/' | relative_url }}">文章归档</a>、<a href="{{ '/sitemap.xml' | relative_url }}">站点地图</a></p>
+  <p><a href="{{ '/feed.xml' | relative_url }}">RSS 订阅</a>、<a href="{{ '/archive/' | relative_url }}">文章归档</a>、<a href="{{ '/categories/' | relative_url }}">分类页</a>、<a href="{{ '/tags/' | relative_url }}">标签页</a>、<a href="{{ '/sitemap.xml' | relative_url }}">站点地图</a></p>
 </section>

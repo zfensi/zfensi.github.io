@@ -15,9 +15,13 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate
 
 feed:
   path: feed.xml
+
+paginate: 6
+paginate_path: "/page/:num/"
 
 defaults:
   - scope:
@@ -37,6 +41,10 @@ webmaster_verifications:
 navigation:
   - title: 首页
     url: /
+  - title: 分类
+    url: /categories/
+  - title: 标签
+    url: /tags/
   - title: 归档
     url: /archive/
   - title: 关于

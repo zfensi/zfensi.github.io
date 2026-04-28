@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+{% assign current_category = page.category | default: page.categories.first %}
+{% assign current_cover = page.cover | default: page.image %}
+{% assign category_related = site.posts | where_exp: "post", "post.url != page.url and (post.category == page.category or post.categories contains current_category)" %}
+{% assign recent_related = site.posts | where_exp: "post", "post.url != page.url" %}
+
+<article class="post-detail" itemscope itemtype="https://schema.org/BlogPosting">
+  {% include breadcrumbs.html %}
+
+  <header class="post-header">
+    <h1 itemprop="headline">{{ page.title }}</h1>
+    <p class="post-header__meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
+      {% if current_category %}
+        / <a href="{{ '/categories/' | relative_url }}#{{ current_category | slugify }}">{{ current_category }}</a>
+      {% endif %}
+      {% if page.target_repo %}
+        / {{ page.target_repo }}
+      {% endif %}
+    </p>
+    {% if page.description %}
+    <p class="post-header__desc" itemprop="description">{{ page.description }}</p>
+    {% endif %}
+    {% if page.tags and page.tags.size > 0 %}
+    <p class="post-card__tags">
+      {% for tag in page.tags %}
+        <a class="tag-chip" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">{{ tag }}</a>
+      {% endfor %}
+    </p>
+    {% endif %}
+  </header>
+
+  {% if current_cover %}
+  <figure class="post-cover">
+    {% if current_cover contains 'http' %}
+    <img src="{{ current_cover }}" alt="{{ page.title }}" itemprop="image">
+    {% else %}
+    <img src="{{ current_cover | relative_url }}" alt="{{ page.title }}" itemprop="image">
+    {% endif %}
+  </figure>
+  {% endif %}
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <section class="page-block">
+    <h2>继续阅读</h2>
+    <p>
+      <a href="{{ '/archive/' | relative_url }}">查看全部归档</a> /
+      <a href="{{ '/categories/' | relative_url }}">浏览分类</a> /
+      <a href="{{ '/tags/' | relative_url }}">浏览标签</a>
+    </p>
+  </section>
+
+  {% if category_related.size > 0 %}
+  <section class="section-header">
+    <h2>相关文章</h2>
+    <p>优先按相同分类推荐，帮助继续浏览相关主题。</p>
+  </section>
+  <section class="post-listing">
+    {% for post in category_related limit: 3 %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  </section>
+  {% elsif recent_related.size > 0 %}
+  <section class="section-header">
+    <h2>相关文章</h2>
+    <p>当前同分类文章还不多，先推荐最近更新的内容。</p>
+  </section>
+  <section class="post-listing">
+    {% for post in recent_related limit: 3 %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  </section>
+  {% endif %}
+</article>

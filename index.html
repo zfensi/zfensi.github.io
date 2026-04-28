@@ -1,0 +1,77 @@
+---
+layout: default
+title: zfensi 个人博客
+description: 中文个人博客首页，展示最新文章、分类、标签和常用导航。
+---
+
+<section class="hero">
+  <p class="hero__eyebrow">ZFENSI BLOG</p>
+  <h1>zfensi 个人博客</h1>
+  <p class="hero__lead">记录 Instagram、SEO、社交营销、独立站与内容增长实践。所有文章本地以 Markdown 编写，推送后自动上线。</p>
+  <p class="hero__actions">
+    <a class="button-like" href="{{ '/archive/' | relative_url }}">查看归档</a>
+    <a class="button-like button-like--ghost" href="{{ '/categories/' | relative_url }}">分类页</a>
+    <a class="button-like button-like--ghost" href="{{ '/tags/' | relative_url }}">标签页</a>
+    <a class="button-like button-like--ghost" href="{{ '/feed.xml' | relative_url }}">RSS</a>
+  </p>
+</section>
+
+<section class="home-grid">
+  <div class="card">
+    <h2>内容方向</h2>
+    <p>围绕 Instagram、SEO、社交营销、网站增长和可复用的方法论持续更新。</p>
+  </div>
+  <div class="card">
+    <h2>写作格式</h2>
+    <p>文章支持 `slug`、`category`、`tags`、`description`、`cover` 等 front matter 字段，便于长期维护。</p>
+  </div>
+  <div class="card">
+    <h2>SEO 基础</h2>
+    <p>已启用 `feed.xml`、`sitemap.xml`、`robots.txt`、结构化数据、面包屑、标签页和分类页。</p>
+  </div>
+</section>
+
+<section class="section-header">
+  <h2>最新文章</h2>
+  <p>首页支持分页，优先展示最近发布的内容。</p>
+</section>
+
+{% if paginator and paginator.posts %}
+  {% assign posts_to_render = paginator.posts %}
+{% else %}
+  {% assign posts_to_render = site.posts %}
+{% endif %}
+
+{% if posts_to_render.size > 0 %}
+<section class="post-listing">
+{% for post in posts_to_render %}
+  {% include post-card.html post=post %}
+{% endfor %}
+</section>
+{% else %}
+<p>还没有文章，先写第 1 篇。</p>
+{% endif %}
+
+{% if paginator and paginator.total_pages > 1 %}
+<nav class="pagination" aria-label="分页导航">
+  {% if paginator.previous_page %}
+    <a class="button-like button-like--ghost" href="{{ paginator.previous_page_path | relative_url }}">上一页</a>
+  {% endif %}
+  <span class="pagination__status">第 {{ paginator.page }} / {{ paginator.total_pages }} 页</span>
+  {% if paginator.next_page %}
+    <a class="button-like button-like--ghost" href="{{ paginator.next_page_path | relative_url }}">下一页</a>
+  {% endif %}
+</nav>
+{% endif %}
+
+<section class="section-header">
+  <h2>快速入口</h2>
+  <p>
+    <a href="{{ '/archive/' | relative_url }}">归档页</a> /
+    <a href="{{ '/categories/' | relative_url }}">分类页</a> /
+    <a href="{{ '/tags/' | relative_url }}">标签页</a> /
+    <a href="{{ '/about/' | relative_url }}">关于页</a> /
+    <a href="{{ '/robots.txt' | relative_url }}">robots.txt</a> /
+    <a href="{{ '/sitemap.xml' | relative_url }}">sitemap.xml</a>
+  </p>
+</section>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Why Build a Personal Blog on GitHub Pages</title>
+  <desc id="desc">Blog cover for GitHub Pages and SEO writing</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <circle cx="1320" cy="180" r="180" fill="#60a5fa" opacity="0.18" />
+  <circle cx="260" cy="760" r="220" fill="#93c5fd" opacity="0.1" />
+  <text x="110" y="180" fill="#93c5fd" font-size="34" font-family="Arial, Helvetica, sans-serif" letter-spacing="5">BLOG / SEO / GITHUB PAGES</text>
+  <text x="110" y="320" fill="#ffffff" font-size="76" font-weight="700" font-family="Arial, Helvetica, sans-serif">Why Build a Personal Blog</text>
+  <text x="110" y="405" fill="#ffffff" font-size="76" font-weight="700" font-family="Arial, Helvetica, sans-serif">on GitHub Pages</text>
+  <text x="110" y="520" fill="#dbeafe" font-size="34" font-family="Arial, Helvetica, sans-serif">Low maintenance, Markdown first, SEO friendly.</text>
+  <text x="110" y="680" fill="#bfdbfe" font-size="28" font-family="Arial, Helvetica, sans-serif">zfensi.github.io</text>
+</svg>
