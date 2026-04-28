@@ -3,3 +3,6 @@ description: zfensi.github.io
 theme: minima
 lang: zh-CN
 url: https://zfensi.github.io
+author: zfensi
+timezone: Asia/Shanghai
+show_excerpts: true
