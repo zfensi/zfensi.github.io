@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">zfensi 个人博客</title>
+  <desc id="desc">记录技术、运营、出海观察与个人思考</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="1040" cy="120" r="120" fill="#60a5fa" opacity="0.18" />
+  <circle cx="920" cy="520" r="160" fill="#93c5fd" opacity="0.12" />
+  <text x="96" y="230" fill="#93c5fd" font-size="30" font-family="Arial, Helvetica, sans-serif" letter-spacing="5">ZFENSI BLOG</text>
+  <text x="96" y="330" fill="#ffffff" font-size="68" font-weight="700" font-family="Arial, Helvetica, sans-serif">zfensi 个人博客</text>
+  <text x="96" y="400" fill="#dbeafe" font-size="30" font-family="Arial, Helvetica, sans-serif">记录技术、运营、出海观察与个人思考</text>
+  <text x="96" y="500" fill="#bfdbfe" font-size="24" font-family="Arial, Helvetica, sans-serif">https://zfensi.github.io</text>
+</svg>

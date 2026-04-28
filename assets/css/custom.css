@@ -1,0 +1,122 @@
+.hero {
+  padding: 2rem 0 1rem;
+}
+
+.hero__eyebrow {
+  margin-bottom: 0.5rem;
+  color: #2563eb;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.hero h1 {
+  margin-bottom: 0.75rem;
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+.hero__lead {
+  max-width: 48rem;
+  color: #374151;
+  font-size: 1.05rem;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.button-like {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border: 1px solid #2563eb;
+  border-radius: 999px;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-like:visited {
+  color: #fff;
+}
+
+.button-like--ghost {
+  background: #fff;
+  color: #2563eb;
+}
+
+.button-like--ghost:visited {
+  color: #2563eb;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.card,
+.post-card,
+.page-block {
+  padding: 1.1rem 1.2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.section-header {
+  margin: 2rem 0 1rem;
+}
+
+.section-header h2 {
+  margin-bottom: 0.3rem;
+}
+
+.section-header p {
+  color: #6b7280;
+}
+
+.post-listing {
+  display: grid;
+  gap: 1rem;
+}
+
+.post-card__meta,
+.archive-list__meta {
+  margin-bottom: 0.35rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.archive-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.archive-list article {
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #d1d5db;
+}
+
+.archive-list article:last-child {
+  border-bottom: 0;
+}
+
+.page-intro {
+  margin: 1rem 0 1.5rem;
+}
+
+.page-block {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+}

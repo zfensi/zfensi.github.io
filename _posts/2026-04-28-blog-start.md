@@ -1,37 +1,35 @@
 ---
-layout: post
-title: "博客开始了"
+title: "为什么把个人博客搭在 GitHub Pages 上"
 date: 2026-04-28 10:00:00 +0800
 categories: [blog]
-tags: [github-pages, markdown]
+tags: [github-pages, markdown, seo]
+description: 从写作成本、部署效率和长期可维护性出发，说明为什么用 GitHub Pages 搭建个人博客。
 ---
 
-# 博客开始了
+# 为什么把个人博客搭在 GitHub Pages 上
 
-这是我的第一篇博客文章。
+这是这个博客的第 1 篇正式文章。之所以先把站点搭在 GitHub Pages 上，是因为它足够轻、足够稳，也适合长期持续写作。
 
-以后我会直接在本地写 Markdown，然后推送到 GitHub Pages。
+## 1. 写作成本低
 
-## 新文章怎么写
+我只需要在本地写 Markdown，不需要登录后台，不需要维护数据库，也不用额外部署复杂服务。
 
-在 `_posts` 目录新建文件，命名格式如下：
+## 2. 发布流程简单
 
-`YYYY-MM-DD-文章名.md`
+写完文章后，提交到 GitHub，站点就会自动更新。这个流程非常适合持续积累内容。
 
-例如：
+## 3. 对 SEO 友好
 
-`2026-04-28-my-post.md`
+静态页面天然更容易保证速度和稳定性。只要把标题、描述、归档、RSS、站点地图这些基础打好，后面就能不断累积搜索表现。
 
-## 文章头部格式
+## 4. 长期维护压力小
 
-每篇文章开头保留这一段基础信息：
+博客最怕的是半路失效。GitHub Pages 的方案足够克制，后面迁移、备份、重构都比较容易。
 
-```yaml
----
-layout: post
-title: "文章标题"
-date: 2026-04-28 10:00:00 +0800
-categories: [blog]
-tags: [随便写]
----
-```
+## 接下来会写什么
+
+后面这里会继续更新：
+
+- GitHub Pages 搭建和定制
+- 中文博客 SEO 基础设置
+- 独立站和内容运营相关记录

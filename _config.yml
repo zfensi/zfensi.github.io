@@ -1,8 +1,45 @@
 title: zfensi 个人博客
-description: zfensi.github.io
+description: 记录技术、运营、出海观察与个人思考的中文博客。
 theme: minima
 lang: zh-CN
+locale: zh_CN
 url: https://zfensi.github.io
+baseurl: ""
 author: zfensi
 timezone: Asia/Shanghai
 show_excerpts: true
+permalink: /:year/:month/:day/:title/
+logo: /assets/favicon.png
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/site-cover.svg
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: zfensi
+
+webmaster_verifications:
+  google: google6744b17961dad095.html
+
+navigation:
+  - title: 首页
+    url: /
+  - title: 归档
+    url: /archive/
+  - title: 关于
+    url: /about/
+  - title: RSS
+    url: /feed.xml
