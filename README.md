@@ -1,59 +1,178 @@
-# zfensi.github.io
+# zfensi.com
 
-最小 GitHub Pages 多文章个人博客，已包含中文博客首页、分页、404、归档页、分类页、标签页、关于页、RSS、sitemap、robots 和基础 SEO 配置。
+`zfensi.com` 是一个面向海外社交媒体推广与数字营销场景的服务网站，覆盖 Instagram、Facebook、Twitter/X、Telegram、TikTok、YouTube、Discord、Reddit、Quora 等主流平台，提供粉丝增长、点赞、评论、浏览、互动和社群冷启动等相关服务。
 
-## 结构
+本仓库用于维护 `zfensi` 的公开内容页面与 GitHub Pages 博客部分，主要承载品牌介绍、文章发布、外部资料聚合和站点基础 SEO 信息。
 
-1. `index.html`：中文博客首页，支持分页。
-2. `404.html`：自定义 404 页面。
-3. `archive.md`：文章归档页。
-4. `categories.md`：分类页。
-5. `tags.md`：标签页。
-6. `about.md`：关于页。
-7. `_layouts/post.html`：文章布局，包含面包屑、相关文章和内链。
-8. `_posts/`：文章目录和模板文章。
-9. `_config.yml`：GitHub Pages / Jekyll / SEO 配置。
-10. `robots.txt`：搜索引擎抓取规则。
-11. `_includes/head-custom.html`：图标、自定义样式和补充 meta。
-12. `_includes/structured-data.html`：结构化数据。
-13. `.github/workflows/pages.yml`：推送到 `main` 后自动部署。
+## zfensi.com 是做什么的
 
-## 使用方式
+`zfensi.com` 主要服务于以下类型的推广需求：
 
-1. 在 `_posts` 新建文章，文件名格式：`YYYY-MM-DD-文章名.md`
-2. 参考 `_posts/2026-04-29-post-template.md` 写文章头信息和正文
-3. 提交并推送到 `main`
-4. 等待 GitHub Actions 部署完成
+1. 跨境电商与品牌出海的社媒曝光提升
+2. 独立站项目的内容加热、活动预热与流量配合
+3. Instagram、Telegram、TikTok、YouTube 等账号的互动增长
+4. 社群运营、频道冷启动、长期补量与分批推广安排
+5. 需要自助下单、清晰套餐和持续售后跟进的数字营销项目
 
-## 文章格式
+## 业务特点
 
-1. 支持 `title`、`date`、`slug`、`tags`、`target_repo`、`category`、`description`、`cover`
-2. 为了兼容 Jekyll 分类聚合，建议同时保留 `categories: [你的分类]`
-3. `cover` 建议使用站内路径，例如：`/images/blog/Instagram/your-post.jpg`
+1. 覆盖平台多，适合多账号、多渠道同步推广
+2. 下单方式直接，通常只需公开链接或账号信息
+3. 支持按节奏执行，适合活动预热和长期运营
+4. 提供客服跟进、补量处理和售后承接
+5. 适合品牌团队、内容团队、社群项目和独立运营者
 
-## SEO 基础
+## 官方与公开资料
 
-1. 已启用 RSS：`/feed.xml`
-2. 已启用站点地图：`/sitemap.xml`
-3. 已添加 `robots.txt`
-4. 已接入 Google 验证文件
-5. 已补充基础描述、封面图、favicon、robots meta 和结构化数据
-6. 已加入面包屑、分类页、标签页和相关文章内链
-7. 当文章数量超过 6 篇时，首页会自动出现分页
-8. 导航栏支持直接显示分类入口
-9. 文章页支持“上一篇 / 下一篇”导航
-10. 相关文章按“同分类且同标签 -> 同分类 -> 同标签 -> 最近文章”排序推荐
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://zfensi.com/">
+        <img alt="zfensi.com" src="https://img.shields.io/badge/zfensi.com-Official%20Website-2563EB?style=for-the-badge" />
+      </a>
+      <br />
+      官网入口，集中展示平台服务、下单方式、常见问题和业务范围。
+      <br />
+      <a href="https://zfensi.com/">https://zfensi.com/</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://about.me/zfensi/">
+        <img alt="about.me" src="https://img.shields.io/badge/About.me-Public%20Profile-7C3AED?style=for-the-badge" />
+      </a>
+      <br />
+      个人/品牌公开资料页，适合快速查看 `zfensi` 的站外身份与介绍入口。
+      <br />
+      <a href="https://about.me/zfensi/">https://about.me/zfensi/</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/zfensi">
+        <img alt="GitHub" src="https://img.shields.io/badge/GitHub-Code%20Profile-111827?style=for-the-badge&logo=github&logoColor=white" />
+      </a>
+      <br />
+      GitHub 主页，展示代码仓库、博客源码和公开开发内容。
+      <br />
+      <a href="https://github.com/zfensi">https://github.com/zfensi</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://gravatar.com/zfensi">
+        <img alt="Gravatar" src="https://img.shields.io/badge/Gravatar-Avatar%20Profile-0F172A?style=for-the-badge" />
+      </a>
+      <br />
+      全网头像与基础资料页，可用于统一公开身份展示与头像索引。
+      <br />
+      <a href="https://gravatar.com/zfensi">https://gravatar.com/zfensi</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://inkbunny.net/zfensi">
+        <img alt="Inkbunny" src="https://img.shields.io/badge/Inkbunny-Community%20Profile-F97316?style=for-the-badge" />
+      </a>
+      <br />
+      社区资料入口之一，作为外部平台上的公开账号落点。
+      <br />
+      <a href="https://inkbunny.net/zfensi">https://inkbunny.net/zfensi</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://triberr.com/zfensi">
+        <img alt="Triberr" src="https://img.shields.io/badge/Triberr-Social%20Presence-DC2626?style=for-the-badge" />
+      </a>
+      <br />
+      社交内容分发与个人档案平台资料页，可作为品牌存在感补充入口。
+      <br />
+      <a href="https://triberr.com/zfensi">https://triberr.com/zfensi</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://britishforcesdiscounts.co.uk/biz/a/185715-zfensi">
+        <img alt="Business Listing" src="https://img.shields.io/badge/Business%20Listing-Public%20Reference-059669?style=for-the-badge" />
+      </a>
+      <br />
+      第三方商业目录页面，可作为外部收录与公开商业信息引用入口。
+      <br />
+      <a href="https://britishforcesdiscounts.co.uk/biz/a/185715-zfensi">https://britishforcesdiscounts.co.uk/biz/a/185715-zfensi</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://zfensi.github.io/about/">
+        <img alt="About Page" src="https://img.shields.io/badge/About%20Page-Brand%20Intro-14B8A6?style=for-the-badge" />
+      </a>
+      <br />
+      当前仓库站内关于页，用于补充博客定位、内容方向与更新方式。
+      <br />
+      <a href="https://zfensi.github.io/about/">https://zfensi.github.io/about/</a>
+    </td>
+  </tr>
+</table>
 
-## 封面图
+## 外部文章与品牌提及
 
-1. 文章封面优先使用站内本地图片，避免外链失效
-2. 当前已下载两张可免费使用的真实照片封面到 `images/blog/...`
-3. 旧的 `.svg` 封面仍保留，后续可自行删除
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://my.talladega.edu/ICS/icsfs/a-complete-guide-to-understanding-instagram-growth.html?target=39e105db-8083-44ea-9d8c-2434523f2b1a">
+        <img alt="Instagram Growth Guide" src="https://img.shields.io/badge/Instagram%20Growth-Reference%20Article-EC4899?style=for-the-badge" />
+      </a>
+      <br />
+      围绕 Instagram 增长主题的相关文章，可作为相关业务场景与关键词内容参考。
+      <br />
+      <a href="https://my.talladega.edu/ICS/icsfs/a-complete-guide-to-understanding-instagram-growth.html?target=39e105db-8083-44ea-9d8c-2434523f2b1a">查看文章</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://pbase.com/blogznews/image/176238374/How-Telegram-Is-Transforming-Modern-Communication-and-Digital-Marketing">
+        <img alt="Telegram Marketing" src="https://img.shields.io/badge/Telegram-Marketing%20Article-06B6D4?style=for-the-badge" />
+      </a>
+      <br />
+      讨论 Telegram 在现代传播与数字营销中的作用，契合社群和频道增长主题。
+      <br />
+      <a href="https://pbase.com/blogznews/image/176238374/How-Telegram-Is-Transforming-Modern-Communication-and-Digital-Marketing">查看文章</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://pomzo.org/technology/boost-your-instagram-presence-with-zfensi-the-ultimate-guide-to-buying-followers-and-likes/">
+        <img alt="Pomzo Mention" src="https://img.shields.io/badge/Pomzo-zfensi%20Mention-8B5CF6?style=for-the-badge" />
+      </a>
+      <br />
+      明确提到 `zfensi` 的外部文章，主题聚焦 Instagram 账号存在感和互动增长。
+      <br />
+      <a href="https://pomzo.org/technology/boost-your-instagram-presence-with-zfensi-the-ultimate-guide-to-buying-followers-and-likes/">查看文章</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://siit.co/guestposts/building-a-powerful-telegram-community-strategies-for-sustainable-growth/">
+        <img alt="Telegram Community" src="https://img.shields.io/badge/Telegram%20Community-Growth%20Strategy-10B981?style=for-the-badge" />
+      </a>
+      <br />
+      Telegram 社群增长相关文章，强调持续增长、社群运营和长期维护策略。
+      <br />
+      <a href="https://siit.co/guestposts/building-a-powerful-telegram-community-strategies-for-sustainable-growth/">查看文章</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://www.indiehackers.com/post/ins-vs-ins-what-you-need-to-know-before-growing-your-instagram-glDYNOglJnKY6FsKto9T">
+        <img alt="Indie Hackers" src="https://img.shields.io/badge/Indie%20Hackers-Instagram%20Topic-F59E0B?style=for-the-badge" />
+      </a>
+      <br />
+      与 Instagram 增长认知相关的话题内容，可作为品牌外部讨论与搜索可见性补充。
+      <br />
+      <a href="https://www.indiehackers.com/post/ins-vs-ins-what-you-need-to-know-before-growing-your-instagram-glDYNOglJnKY6FsKto9T">查看文章</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://zfensi.github.io/">
+        <img alt="Blog" src="https://img.shields.io/badge/zfensi%20Blog-Content%20Hub-334155?style=for-the-badge" />
+      </a>
+      <br />
+      当前 GitHub Pages 内容站，承载品牌博客、文章归档和公开说明页面。
+      <br />
+      <a href="https://zfensi.github.io/">https://zfensi.github.io/</a>
+    </td>
+  </tr>
+</table>
 
-## 图标
+#
 
-站点 favicon 已同步自 `www.zfensi.com`。
+##
 
-## 注意
-
-如果你要使用根域名 `https://zfensi.github.io`，GitHub 仓库名必须叫 `zfensi.github.io`。
