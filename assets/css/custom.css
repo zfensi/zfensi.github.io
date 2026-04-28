@@ -206,6 +206,34 @@
   margin-bottom: 2rem;
 }
 
+.post-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.post-nav__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid #dbeafe;
+  border-radius: 16px;
+  background: #f8fbff;
+  text-decoration: none;
+}
+
+.post-nav__item strong {
+  color: #111827;
+}
+
+.post-nav__label,
+.post-nav__meta {
+  color: #6b7280;
+  font-size: 0.92rem;
+}
+
 .pagination {
   display: flex;
   flex-wrap: wrap;
