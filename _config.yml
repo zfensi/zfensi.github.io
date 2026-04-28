@@ -8,7 +8,7 @@ baseurl: ""
 author: zfensi
 timezone: Asia/Shanghai
 show_excerpts: true
-permalink: /:year/:month/:day/:title/
+permalink: /:slug/
 logo: /assets/favicon.png
 
 plugins:

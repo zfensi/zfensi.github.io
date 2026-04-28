@@ -28,9 +28,8 @@ layout: default
   <header class="post-header">
     <h1 itemprop="headline">{{ page.title }}</h1>
     <p class="post-header__meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
       {% if current_category %}
-        / <a href="{{ '/categories/' | relative_url }}#{{ current_category | slugify }}">{{ current_category }}</a>
+        <a href="{{ '/categories/' | relative_url }}#{{ current_category | slugify }}">{{ current_category }}</a>
       {% endif %}
       {% if page.target_repo %}
         / {{ page.target_repo }}
@@ -72,14 +71,12 @@ layout: default
     <a class="post-nav__item" href="{{ older_post.url | relative_url }}">
       <span class="post-nav__label">上一篇</span>
       <strong>{{ older_post.title }}</strong>
-      <span class="post-nav__meta">{{ older_post.date | date: "%Y-%m-%d" }}</span>
     </a>
     {% endif %}
     {% if newer_post %}
     <a class="post-nav__item" href="{{ newer_post.url | relative_url }}">
       <span class="post-nav__label">下一篇</span>
       <strong>{{ newer_post.title }}</strong>
-      <span class="post-nav__meta">{{ newer_post.date | date: "%Y-%m-%d" }}</span>
     </a>
     {% endif %}
   </nav>

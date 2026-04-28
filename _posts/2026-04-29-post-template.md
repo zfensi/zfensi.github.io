@@ -1,7 +1,6 @@
 ---
 title: >-
   文章标题
-date: 2026-04-29T09:00:00.000Z
 slug: >-
   your-article-slug
 tags:
@@ -18,6 +17,8 @@ cover: >-
 ---
 
 # 文章标题
+
+文章发布链接示例：`/your-article-slug/`
 
 开头先写一段导语，说明这篇文章想解决什么问题，适合谁阅读。
 

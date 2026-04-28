@@ -2,9 +2,8 @@
 {% assign post_category = post.category | default: post.categories.first %}
 <article class="post-card">
   <p class="post-card__meta">
-    {{ post.date | date: "%Y-%m-%d" }}
     {% if post_category %}
-      / <a href="{{ '/categories/' | relative_url }}#{{ post_category | slugify }}">{{ post_category }}</a>
+      <a href="{{ '/categories/' | relative_url }}#{{ post_category | slugify }}">{{ post_category }}</a>
     {% endif %}
   </p>
   <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>

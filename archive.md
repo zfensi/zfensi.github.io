@@ -2,7 +2,7 @@
 layout: default
 title: 归档
 permalink: /archive/
-description: 按时间查看 zfensi 个人博客的全部文章归档。
+description: 查看 zfensi 个人博客的全部文章归档与分类入口。
 ---
 
 <nav class="breadcrumbs" aria-label="面包屑">
@@ -13,7 +13,7 @@ description: 按时间查看 zfensi 个人博客的全部文章归档。
 
 # 文章归档
 
-<p class="page-intro">这里按时间倒序展示全部已发布文章，方便搜索引擎抓取和读者快速回看。</p>
+<p class="page-intro">这里集中展示全部已发布文章，方便搜索引擎抓取和读者快速回看。</p>
 
 {% if site.categories.size > 0 %}
 <section class="section-header">
@@ -40,13 +40,12 @@ description: 按时间查看 zfensi 个人博客的全部文章归档。
 
 {% if site.posts.size > 0 %}
 <section class="section-header">
-  <h2>按时间浏览</h2>
-  <p>如果你想顺着发布时间回看，这里保留完整时间线。</p>
+  <h2>全部文章</h2>
+  <p>使用 slug 路径展示全部已发布内容。</p>
 </section>
 <section class="archive-list">
 {% for post in site.posts %}
   <article>
-    <p class="archive-list__meta">{{ post.date | date: "%Y-%m-%d" }}</p>
     <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
     {% if post.description %}
     <p>{{ post.description }}</p>
